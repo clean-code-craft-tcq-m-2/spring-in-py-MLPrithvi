@@ -3,7 +3,7 @@ import math as m
 def calculateStats(numbers):
   length = len(numbers)
   if length == 0:
-    a = m.isnan(numbers)
+    a = m.nan
     test2 = {"avg":a, "min":a, "max":a}
     return test2
   avgVal = sum(numbers) / length
