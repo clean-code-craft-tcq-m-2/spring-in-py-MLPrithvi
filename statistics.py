@@ -3,10 +3,8 @@ import math as m
 def calculateStats(numbers):
   length = len(numbers)
   if length == 0:
-    a = m.isnan(sum(numbers) / length)
-    b = m.isnan(min(numbers))
-    c = m.isnan(max(numbers))
-    test2 = {"avg":a, "min":b, "max":c}
+    a = m.isnan(numbers)
+    test2 = {"avg":a, "min":a, "max":a}
     return test2
   avgVal = sum(numbers) / length
   minVal = min(numbers)
