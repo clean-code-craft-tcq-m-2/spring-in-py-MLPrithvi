@@ -1,4 +1,5 @@
 import math as m
+import statistics
 
 def calculateStats(numbers):
   if type(numbers) == list:
