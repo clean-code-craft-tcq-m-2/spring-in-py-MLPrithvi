@@ -13,3 +13,16 @@ def calculateStats(numbers):
         minVal = min(numbers)
         test = {"avg":avgVal, "min":minVal, "max":maxVal}
         return test
+
+def StatsAlerter(maxThreshold, [emailAlert, ledAlert]):
+  computedStats = statistics.calculateStats([22.6, 12.5, 3.7])
+      if computedStats["max"] > maxThreshold:
+        emailAlert.emailSent = True
+        ledAlert.ledGlows = True
+  return (emailAlert, ledAlert)
+    
+def LEDAlert():
+  return ledGlows = False
+
+def EmailAlert():
+  return emailSent = False
