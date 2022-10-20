@@ -1,5 +1,4 @@
 import math as m
-import statistics
 
 def calculateStats(numbers):
   if type(numbers) == list:
@@ -16,7 +15,7 @@ def calculateStats(numbers):
         return test
 
 def StatsAlerter(maxThreshold, [emailAlert, ledAlert]):
-  computedStats = statistics.calculateStats([22.6, 12.5, 3.7])
+  computedStats = calculateStats([22.6, 12.5, 3.7])
       if computedStats["max"] > maxThreshold:
         EmailAlert.emailSent = True
         LedAlert.ledGlows = True
