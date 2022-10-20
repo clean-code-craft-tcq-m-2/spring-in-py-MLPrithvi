@@ -11,5 +11,5 @@ def calculateStats(numbers):
         avgVal = sum(numbers) / length
         maxVal = max(numbers)
         minVal = min(numbers)
-  test = {"avg":avgVal, "min":minVal, "max":maxVal}
-  return test
+        test = {"avg":avgVal, "min":minVal, "max":maxVal}
+        return test
