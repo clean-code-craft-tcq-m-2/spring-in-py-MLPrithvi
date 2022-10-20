@@ -17,9 +17,9 @@ def calculateStats(numbers):
 def StatsAlerter(maxThreshold, [emailAlert, ledAlert]):
   computedStats = statistics.calculateStats([22.6, 12.5, 3.7])
       if computedStats["max"] > maxThreshold:
-        emailAlert.emailSent = True
-        ledAlert.ledGlows = True
-  return (emailAlert, ledAlert)
+        EmailAlert.emailSent = True
+        LedAlert.ledGlows = True
+  return (EmailAlert.emailSent, LedAlert.ledGlows)
     
 def LEDAlert():
   return ledGlows = False
